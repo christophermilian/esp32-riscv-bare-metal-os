@@ -1,0 +1,20 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPath": "/Users/christophermilian/esp/esp-idf",
+  "idf.pythonInstallPath": "/opt/homebrew/bin/python3",
+  "idf.openOcdConfigs": [
+    "board/esp32c3-builtin.cfg"
+  ],
+  "idf.port": "/dev/tty.usbmodem21201",
+  "idf.toolsPath": "/Users/christophermilian/.espressif",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32c3"
+  },
+  "idf.flashType": "UART",
+  "files.associations": {
+    "cstdint": "c",
+    "stdbool.h": "c"
+  },
+  "rust-analyzer.cargo.target": "riscv32imc-unknown-none-elf",
+  "rust-analyzer.check.allTargets": false
+}

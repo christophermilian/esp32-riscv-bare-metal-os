@@ -1,0 +1,19 @@
+[package]
+name = "esp32-riscv-bare-metal-os"
+version = "0.1.0"
+edition = "2021"
+authors = ["Christopher Milian"]
+description = "Bare-metal OS for ESP32-C3 RISC-V in Rust"
+
+[dependencies]
+esp-hal = { version = "0.22", features = ["esp32c3"] }
+esp-backtrace = { version = "0.14", features = ["esp32c3", "panic-handler", "println"] }
+esp-println = { version = "0.12", default-features = false, features = ["esp32c3", "uart", "colors", "critical-section"] }
+critical-section = "1.2"
+
+[profile.dev]
+opt-level = "s"
+
+[profile.release]
+opt-level = "s"
+lto = "fat"

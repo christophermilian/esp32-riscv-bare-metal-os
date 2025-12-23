@@ -1,0 +1,11 @@
+.claude
+.DS_STORE
+plans/
+
+# C
+build/
+sdkconfig
+
+# Rust
+rust/target/
+rust/Cargo.lock

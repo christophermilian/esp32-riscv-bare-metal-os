@@ -1,0 +1,11 @@
+# Disable ESP-IDF console output on UART
+CONFIG_ESP_CONSOLE_NONE=y
+
+# Or redirect to USB Serial JTAG if you want ESP-IDF logs elsewhere
+# CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
+
+# Disable bootloader logs (optional - keeps bootloader quiet)
+CONFIG_BOOTLOADER_LOG_LEVEL_NONE=y
+
+# Disable app logs
+CONFIG_LOG_DEFAULT_LEVEL_NONE=y
